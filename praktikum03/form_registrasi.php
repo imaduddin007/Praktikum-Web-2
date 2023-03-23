@@ -22,7 +22,7 @@ $domisili = ['Jakarta', 'Depok', 'Bogor', 'Tanggerang', 'Bekasi', 'Lainnya'];
 </head>
 <body>
     <div class="mx-5">
-        <h2>Form Registrasi IT Club</h2>
+        <h2>Form Registrasi</h2>
         <hr>
         <form method="POST" action="form_submit.php">
             <div class="form-group row">

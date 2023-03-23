@@ -1,21 +1,3 @@
-<?php
-
-$customer = $_POST['customer'];
-$produk = $_POST['produk'];
-$jumlah = $_POST['jumlah'];
-
-if ($produk == "TV") {
-    $harga = 4200000 * $jumlah;
-} elseif ($produk == "Kulkas") {
-    $harga = 3100000 * $jumlah;
-} elseif ($produk == "Mesin Cuci") {
-    $harga = 3800000 * $jumlah;
-} else {
-    echo "Produk Tidak di temukan";
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,6 +56,31 @@ if ($produk == "TV") {
                         </div>
                     </div>
                 </form>
+
+                <?php
+                $customer = "";
+                $produk = "";
+                $jumlah = "";
+                $harga = "0";
+                ?>
+
+                <?php
+                if (isset($_POST['submit'])) {
+                    $customer = $_POST['customer'];
+                    $produk = $_POST['produk'];
+                    $jumlah = $_POST['jumlah'];
+
+                    if ($produk == "TV") {
+                        $harga = 4200000 * $jumlah;
+                    } elseif ($produk == "Kulkas") {
+                        $harga = 3100000 * $jumlah;
+                    } elseif ($produk == "Mesin Cuci") {
+                        $harga = 3800000 * $jumlah;
+                    } else {
+                        echo "Produk Tidak di temukan";
+                    }
+                }
+                ?>
             </div>
             <div class="col-md-4">
                 <div class="list-group">
