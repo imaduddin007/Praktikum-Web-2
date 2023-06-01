@@ -1,5 +1,4 @@
-@include('admin.layout.top')
-@include('admin.layout.menu')
+@include('frontend.layout.top')
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid px-4">
@@ -7,4 +6,4 @@
         </div>
     </main>
 </div>
-@include('admin.layout.bottom')
+@include('frontend.layout.bottom')
